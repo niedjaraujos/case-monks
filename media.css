@@ -41,6 +41,7 @@
 
   nav .header-nav_menu {
     display: block;
+    position: relative;
   }
   .header-img.open {
     display: none;
