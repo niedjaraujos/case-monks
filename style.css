@@ -15,6 +15,7 @@
   --color-purple-back: #dfbbfe;
   --color-textform: #777;
   --color-white: #fff;
+  --color-erro: #db0000;
 }
 
 /* estilização global */
@@ -351,7 +352,7 @@ nav ul li {
   font-size: 1.25rem;
 }
 
-.form-section_content span {
+.form-section_content .info {
   font-size: 1rem;
   margin-block: 16px;
 }
@@ -424,6 +425,15 @@ input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.mensage-error {
+  text-align: end;
+  color: var(--color-erro);
+  font-size: 1.5rem;
+}
+
+.form-verification input.erro {
+  border: 2px solid var(--color-erro);
 }
 
 /* rodapé*/

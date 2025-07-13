@@ -29,7 +29,9 @@ document.querySelector('#btn-enviar').addEventListener('click', () => {
     alert('Formulário enviado, aguarde nosso contato'); //se estiver certo envia o formulario
   } else {
     //mensagem de alerta de erro e gera novos numeros
-    alert('Tente Novamente');
+    resultado.classList.add('erro');
+    document.querySelector('.mensage-error').textContent = 'Tente novamente!';
+
     gerarNumeros();
   }
   resultado.value = ''; //limpa o input de resultado
