@@ -1,0 +1,249 @@
+/* Responsividade */
+@media (width <= 768px) {
+  .container {
+    padding-block: 2rem;
+  }
+
+  /* cabeçalho*/
+  header {
+    border-radius: 0px;
+  }
+  header .header-img {
+    height: 100%;
+  }
+  .header-nav_content {
+    padding: 0rem 2rem 1.5rem 1.5rem;
+  }
+  .header-nav_logo img {
+    width: 5.8rem;
+  }
+
+  .header-nav_menu img {
+    width: 1.25rem;
+  }
+  .header-text {
+    width: 14rem;
+  }
+  .header-text .title {
+    padding-top: 2rem;
+  }
+  .header-text h1 {
+    font-size: 1.75rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+  }
+  .header-text img {
+    width: 2.35rem;
+  }
+
+  /* categorias do navbar do cabeçalho e menu hamburguer ativo */
+
+  nav .header-nav_menu {
+    display: block;
+  }
+  .header-img.open {
+    display: none;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: var(--color-purple-back);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  .nav-list li {
+    list-style: inside;
+    color: var(--secondary-color);
+  }
+
+  .nav-list li a {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-back {
+    display: flex;
+    margin-top: 2.5rem;
+  }
+  .nav-back:hover {
+    background: none;
+    transform: scale(1.1);
+  }
+
+  /*animação para entrada e saida*/
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /*galeria*/
+  .products-gallery_cards,
+  .products-tags-content,
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* secão 1 galeria de produtos */
+  .products-gallery h3 {
+    font-size: 1.5rem;
+  }
+  .products-gallery p {
+    font-size: 1rem;
+  }
+  .products-gallery_card {
+    width: 100%;
+  }
+
+  /* secão 2 galeria de fotos */
+  .gallery {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .gallery img {
+    max-width: 100%;
+  }
+  .gallery h3 {
+    font-size: 1.5rem;
+  }
+  .gallery p {
+    font-size: 1rem;
+  }
+  .gallery-right {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* secão  app */
+  .app-section_content {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .app-section_content h3 {
+    font-size: 1.5rem;
+  }
+  .app-section_content p {
+    font-size: 1rem;
+  }
+  .app-section_buttons {
+    gap: 0;
+  }
+  .app-section_buttons .button {
+    width: 264px;
+    height: 78px;
+  }
+
+  /* seção 4 produtos-tags */
+  .products h3 {
+    font-size: 1.5rem;
+  }
+  .products-tags-content {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .products-tags-content .tag {
+    font-size: 1rem;
+    line-height: 24px;
+    padding: 8px 24px;
+  }
+
+  /* seção 5 cards */
+  .cards-card h3 {
+    font-size: 1.25rem;
+  }
+  .cards-card p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .cards-card button {
+    margin-bottom: 0;
+  }
+
+  /* secão formulário */
+  .form-section_panel {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-section_panel img {
+    width: 100%;
+  }
+  .form-section_content h3 {
+    font-size: 1.5rem;
+  }
+  .form-section_content p {
+    font-size: 1rem;
+  }
+  .form-section_content span {
+    font-size: 1rem;
+  }
+  .form-verification {
+    flex-wrap: wrap;
+  }
+  .form-verification_calc img {
+    width: 14px;
+  }
+  .form-verification_sum {
+    width: 115px;
+  }
+  .form-verification_value {
+    font-size: 1rem;
+  }
+  .form-verification h3 {
+    font-size: 1.25rem;
+  }
+  .form-verification input {
+    width: 7rem;
+  }
+
+  /* rodapé*/
+  .footer-infos h3 {
+    font-size: 1.25rem;
+  }
+  .footer-infos ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-infos ul li {
+    font-size: 1rem;
+    margin: 5px 10px;
+  }
+}
+
+/* para tablets*/
+@media (width >= 768px) and (width<= 1024px) {
+  header {
+    min-height: 100%;
+  }
+  .products-gallery_card {
+    width: 430px;
+  }
+  .cards {
+    justify-content: center;
+  }
+  .form-section_panel {
+    flex-direction: column;
+  }
+}
